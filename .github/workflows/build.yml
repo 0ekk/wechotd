@@ -50,7 +50,7 @@ jobs:
         provenance: false
         platforms: linux/amd64, linux/arm64
         tags: |
-          ghcr.io/${{ github.repository }}/wechotd:${{ matrix.tag }}
+          ghcr.io/${{ github.repository }}:${{ matrix.tag }}
           ${{ secrets.ALIYUN_REGISTRY_REPOSITORY }}:${{ matrix.tag }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
